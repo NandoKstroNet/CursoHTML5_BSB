@@ -1,0 +1,56 @@
+
+body {
+  font-family:Arial;
+  background:silver;
+}
+
+nav {
+  width:120px;
+  margin-right: 20px;
+  float:left;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+}
+nav li {
+  list-style:none;
+  margin:0;
+  padding:10px;
+  border-bottom:1px solid;
+}
+nav>ul>li>a:after {
+  content:" -";
+  font-size:200%;
+}
+nav li.fechado>a:after {
+  content:" +";
+}
+nav li.fechado ul {
+  display:none;
+}
+
+form {
+  width:400px;
+  text-align:right;
+}
+form label {
+  display:block;
+}
+
+article,aside,section {
+  margin:0 0 0 140px;
+  padding:20px;
+  background:white;
+}
+
+footer {
+  margin-top:30px;
+  border-top:1px solid;
+  padding:20px;
+  text-align:center;
+  background:black;
+  color:white;
+}
+
