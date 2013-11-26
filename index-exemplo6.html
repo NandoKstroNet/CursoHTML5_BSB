@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exemplo MathML</title>
+    <script>
+    valoresAtuais=[200,200,200,200]
+    valoresAlvo=[200,200,200,200]
+    function passoAnimacao(){
+      for(var i=0;i<valoresAtuais.length;i++){
+        if(valoresAtuais[i]<valoresAlvo[i]){
+	  valoresAtuais[i]++
+	}
+        if(valoresAtuais[i]>valoresAlvo[i]){
+	  valoresAtuais[i]--
+	}
+	atualizaGrafico(valoresAtuais)
+      }
+    }
+    function atualizaGrafico(valores){
+      for(var i=0;i<valores.length;i++){
+        var barra=document.querySelector('#v'+i)
+	barra.setAttribute('height',valores[i])
+	barra.setAttribute('y',200-valores[i])
+	var linha1=document.querySelector('#l'+(i-1))
+	var linha2=document.querySelector('#l'+i)
+	if(linha1){
+	  linha1.setAttribute('y2',200-valores[i])
+	}
+	if(linha2){
+	  linha2.setAttribute('y1',200-valores[i])
+	}
+      }
+    }
+    setInterval(passoAnimacao,10)
+    </script>
+</head>
+<body>
+
+<svg width="500" height="200">
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="0" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="40" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="80" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="120" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="160" x="-10" />
+  <line id="l0" x1="25"  y1="0" x2="100" y2="0" stroke-width="6" stroke="red" />
+  <line id="l1" x1="100" y1="0" x2="175" y2="0" stroke-width="6" stroke="red" />
+  <line id="l2" x1="175" y1="0" x2="250" y2="0" stroke-width="6" stroke="red" />
+</svg><br />
+
+<svg width="500" height="200">
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="0" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="40" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="80" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="120" x="-10" />
+  <rect width="520" height="20" stroke="#999999" stroke-width="1" fill="white" y="160" x="-10" />
+  <rect id="v0" width="50" x="25" y="0" height="200" fill="red" />
+  <rect id="v1" width="50" x="100" y="0" height="200" fill="green" />
+  <rect id="v2" width="50" x="175" y="0" height="200" fill="blue" />
+  <rect id="v3" width="50" x="250" y="0" height="200" fill="silver" />
+</svg><br />
+
+<svg width="500" height="500">
+  <rect width="300" height="200" fill="red" stroke="black" stroke-width="10" x="20" y="40" />
+  <circle r="40" fill="yellow" cx="150" cy="150" />
+  <line x1="10" y1="400" x2="490" y2="100" stroke="green" stroke-width="30" />
+</svg>
+
+</body>
+</html>
