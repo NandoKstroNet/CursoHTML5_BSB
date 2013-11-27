@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link href='http://fonts.googleapis.com/css?family=Redressed' rel='stylesheet' type='text/css'>
+	<title>Aula de CSS3</title>
+</head>
+<body>
+	<header class="topo-pagina inicio aberta" id="inicio">
+		<h1>Seletores</h1>
+		<p>Na tag header temos o exemplo de como usar classes, e que podemos por mais de uma</p>
+	</header>
+	<section>
+		<header class="topo-pagina">
+			<h2>Classes</h2>
+			<p>A mesma class pode ser utilizada em várias tags</p>
+		</header>
+		<p>
+			Podemos estilizar elementos pelo nome da sua tag, pelo nome de uma class e pelo nome do id (não recomendado).
+		</p>
+	</section>>
+
+	<ul class="lista">
+		<li>
+			<a href="">Telefone</a>
+		</li>
+		<li>
+			<a href="">Telefone</a>
+		</li>
+	</ul>
+
+	<p class="texto-comum">
+		<span class="grifo">
+			.grifo é um filho direto de .texto-comum
+		</span>
+		<br>
+		<span>
+			<a class="grifo">
+				nesta situação, .grifo não é mais um filho direto de .texto comum pois está em um nível a mais de aninhamento.
+			</a>
+		</span>
+	</p>
+
+	<p class="texto-aleatorio">
+		Este é o elemento que procede o texto comum, ou seja, pega a estilização de .texto-comum + .texto-aleatório {}
+	</p>
+	<br><br><br>
+	<nav>
+		<ul class="menu">
+			<li><a href="">item1</a></li>
+			<li><a href="">item2</a></li>
+			<li><a href="">item3</a></li>
+			<li><a href="">item4</a></li>
+			<li><a href="">item5</a></li>
+			<li><a href="">item1</a></li>
+			<li><a href="">item2</a></li>
+			<li><a href="">item3</a></li>
+			<li><a href="">item4</a></li>
+			<li><a href="">item5</a></li>
+			<li><a href="">item1</a></li>
+			<li><a href="">item2</a></li>
+			<li><a href="">item3</a></li>
+			<li><a href="">item4</a></li>
+			<li><a href="">item5</a></li>
+		</ul>
+	</nav>
+<br>
+<br>
+<br>
+	<p>
+		elementos de texto/inline:
+		<strong style="background: blue">oi</strong> 
+		<a href="" style="background: red">tudo</a> 
+		<span  style="background: pink">bem <strong>?</strong> <a href=""></a></span>
+	</p>
+	<p>
+		texto dentro de texto : liberado <br>
+		bloco dentro de bloco: liberado -> exceto P dentro de P, H1-H6 dentro de outros "H"s ;D <br>
+		bloco dentro de texto: nao pode <br>
+		texto dentro de bloco: liberado <br>
+	</p>
+
+<br>
+	<div class="menumaluco">
+	  <a href="#">Item</a>
+	  <a href="#">Item</a>
+	  <a href="#">Item</a>
+	  <a href="#">Item</a>
+	  <a href="#">Item</a>
+	  <a href="#">Item</a>
+	</div>
+<br>
+<br>
+	<p style="background: blue">elemento tipo bloco</p>
+	<div style="background: red">curso de css: elementi tipo bloco</div>
+<br>
+<br>
+	<section class="curso">
+		curso de html5
+	</section>
+
+<br>
+<br>
+	<div class="caixa">
+
+
+	</div>
+
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
