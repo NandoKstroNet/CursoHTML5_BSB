@@ -1,0 +1,8 @@
+<script>
+
+window.onload=function(){
+	document.querySelector('textarea').value=localStorage['valorSalvo']
+}
+
+</script>
+<textarea oninput="localStorage['valorSalvo']=this.value"></textarea>
