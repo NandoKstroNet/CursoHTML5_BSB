@@ -1,0 +1,13 @@
+<button onclick="achar()">Achar</button>
+<script>
+
+function achar(){
+    navigator.geolocation.watchPosition(function(geo){
+    	console.log(geo)
+    },{
+    	enableHighAccuracy: true,
+    	timeout:120
+    })
+}
+
+</script>
