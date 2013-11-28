@@ -1,0 +1,203 @@
+/* animação do sol < ********************************************************** */
+@-moz-keyframes sunrise{
+	0%{
+		bottom: 0;
+		left: 340px;
+		background: #f00;
+	}
+
+	33%{
+		bottom: 340px;
+		left: 340px;
+		background: #ffd630;
+	}
+
+	66%{
+		bottom: 340px;
+		left: 40px;
+		background: #ffd630;
+	}
+
+	100% {
+		bottom: 0;
+		left: 40px;
+		background: #f00;
+	}
+}
+
+
+#sun.animate{
+	-moz-animation-name: sunrise;
+	-moz-animation-duration: 10s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+
+/* animação do sol > ********************************************************** */
+
+/* animação do céu < ********************************************************** */
+
+@-moz-keyframes sky{
+	0%{background-color: #525252;}
+	33%{background-color: #6293e5;}
+	66%{background-color: #6293e5;}
+	100%{background-color: #525252;}
+}
+
+#sky.animate{
+	-moz-animation-name: sky;
+	-moz-animation-duration: 10s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+
+/* animação do céu > ********************************************************** */
+
+
+/* animação da grama < ********************************************************** */
+
+@-moz-keyframes ground{
+	0%{background-color: #6c5228;}
+	33%{background-color: #48a037;}
+	66%{background-color: #48a037;}
+	100%{background-color: #6c5228;}
+}
+
+#ground.animate{
+	-moz-animation-name: ground;
+	-moz-animation-duration: 10s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+
+/* animação da grama > ********************************************************** */
+
+/* animação da nuvens < ********************************************************** */
+
+@-webkit-keyframes cloud,
+@-moz-keyframes cloud
+@keyframes cloud,{
+	0%{
+		opacity:0;
+		left: -100px;
+	}
+	50%{
+		opacity:1;
+		left: 60px;
+	}
+	75%{
+		opacity:1;
+		left: 100px;
+	}
+	100%{
+		opacity:0;
+		left: 500px;
+	}
+}
+
+#cloud.animate{
+	-moz-animation-name: cloud;
+	-moz-animation-duration: 12s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+
+	-webkit-animation-name: cloud;
+	-moz-animation-duration: 12s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+
+/* animação da nuvens > ********************************************************** */
+
+/* animação da lua < ********************************************************** */
+
+@-moz-keyframes moon{
+	0%{
+		opacity:0;
+		left: -100px;
+	}
+	50%{
+		opacity:0;
+		left: -100px;
+	}
+	75%{
+		opacity:0;
+		left: -100px;
+	}
+	100%{
+		opacity:1;
+		left: 50px;
+	}
+}
+
+#moon.animate{
+	-moz-animation-name: moon;
+	-moz-animation-duration: 10s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+
+/* animação da lua > ********************************************************** */
+
+/* animação da estrela < ********************************************************** */
+
+@-moz-keyframes star{
+	0%{
+		opacity:0;
+		left: -100px;
+	}
+	50%{
+		opacity:0;
+		left: -100px;
+	}
+	75%{
+		opacity:0;
+		left: -100px;
+	}
+	100%{
+		opacity:1;
+		left: 50px;
+		visibility: visible;
+		
+	}
+}
+
+#star.animate{
+	-moz-animation-name: star;
+	-moz-animation-duration: 10s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: normal;
+	-moz-animation-delay: 0;
+	-moz-animation-play-state: running;
+	-moz-animation-fill-mode: forwards;
+}
+
+/* animação da estrela > ********************************************************** */
+
+
+
