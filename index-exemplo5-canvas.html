@@ -1,31 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <title>Exemplo Canvas</title>
-    <script>
-    function desenhar(){
-      var canvas=document.querySelector('canvas')
-      var ctx=canvas.getContext('2d')
-      ctx.moveTo(150,50)
-      ctx.lineTo(220,250)
-      ctx.lineTo(50,125)
-      ctx.lineTo(250,125)
-      ctx.lineTo(80,250)
-      ctx.lineTo(150,50)
-      ctx.strokeStyle="#F00"
-      ctx.stroke()
-      ctx.fillStyle="#FF0"
-      ctx.fill()
-    }
-    </script>
+  <meta charset="UTF-8">
+  <title>Exemplo Canvas HTML5</title>
 </head>
 <body>
 
-<canvas width="500" height="300">
-</canvas>
-<br />
-<button onclick="desenhar()">Desenhar</button>
+  <canvas width="500" height="300"></canvas>
+  <br />
+  <button onclick="desenhar()">Desenhar</button>
 
+<script>
+  function desenhar(){
+    var canvas=document.querySelector('canvas')
+    var ctx=canvas.getContext('2d')
+    ctx.moveTo(150,50)
+    ctx.lineTo(220,250)
+    ctx.lineTo(50,125)
+    ctx.lineTo(250,125)
+    ctx.lineTo(80,250)
+    ctx.lineTo(150,50)
+    ctx.strokeStyle="#F00"
+    ctx.stroke()
+    ctx.fillStyle="#FF0"
+    ctx.fill()
+  }
+</script>
 </body>
 </html>
